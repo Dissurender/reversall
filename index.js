@@ -10,14 +10,13 @@
     );
   }
 
-  function setDelta(delta) {
-    return -delta * 1;
-  }
-
   function reverseAll(event) {
     if (isReverse && event.deltaY != 0) {
       // reverse scroll direction
-      window.scrollBy({ top: setDelta(event.deltaY), left: 0 });
+      window.scrollBy({
+        top: -event.deltaY * 1.5,
+        left: 0,
+      });
       event.preventDefault();
     }
   }
