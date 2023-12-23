@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+#top {
+  width: 40%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: rainbow;
+}
+
+body {
+  padding: 2.5em 1em;
+  font-family: IBM Plex Mono, monospace;
+  font-size: 1.6em;
+  line-height: 1.6;
+  background: #1d2024;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center;
+  display: flex;
+  height: 22em;
+  width: 32em;
+  margin: auto;
+  color: rgb(212, 212, 212);
+}
+
+:root {
+  --bg: #fff;
+  --header-bg: #f4f5f6;
+  --button-bg: #9b4dca;
+  --button-disabled: #cfd0d4;
+  --button-disabled-border: #cfd0d4;
+  --button-text: #fff;
+  --twitter-button-bg: #00a9ed;
+  --text: #606c76;
+  --loading-text: #606c76;
+  --input-border: #d1d1d1;
+  --input-text: #000;
+}
+
+html {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* Button */
+.btn,
+.btn *,
+.btn :after,
+.btn :before,
+.btn:after,
+.btn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #eef2ff;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #553f5c;
+  box-shadow: rgb(85, 63, 92) 0 2px 4px, rgb(85, 63, 92) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgb(85, 63, 92);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 65px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 20px;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(85, 63, 92, 0.4) 0 2px 4px,
+    rgba(85, 63, 92, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(85, 63, 92, 0.3) 0 4px 8px,
+    rgba(85, 63, 92, 0.2) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.btn > img {
+  display: block;
+  color: #f4daff;
+  height: 30px;
+}
+.btn [hidden] {
+  display: none;
+}

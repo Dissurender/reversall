@@ -1,0 +1,19 @@
+{
+  "name": "reversall",
+  "version": "1.0.0",
+  "description": "A simple extension to reverse scrolling behavior",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dissurender/reversall.git"
+  },
+  "author": "Rhyn Ogg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dissurender/reversall/issues"
+  },
+  "homepage": "https://github.com/Dissurender/reversall#readme"
+}
