@@ -16,7 +16,7 @@
   clear: both;
 }
 
-#top {
+#container {
   width: 40%;
   max-width: 1000px;
   margin: 0 auto;
@@ -126,11 +126,7 @@ html {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
-.btn > img {
-  display: block;
-  color: #f4daff;
-  height: 30px;
-}
+
 .btn [hidden] {
   display: none;
 }
