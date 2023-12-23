@@ -1,5 +1,5 @@
 {
-  "name": "reverseAll",
+  "name": "reversAll",
   "version": "0.0.1",
   "description": "reverse scrolling behavior with a toggle.",
   "content_scripts": 

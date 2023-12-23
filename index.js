@@ -3,14 +3,14 @@
 (function () {
   let isReverse = false;
 
-  function toggleReverseAll() {
+  function toggleReversAll() {
     isReverse = !isReverse;
     console.log(
       "Scroll behavior is:" + (isReverse === true ? " Reversed." : " Normal.")
     );
   }
 
-  function reverseAll(event) {
+  function reversAll(event) {
     if (isReverse && event.deltaY != 0) {
       // reverse scroll direction
       window.scrollBy({
@@ -21,11 +21,11 @@
     }
   }
 
-  window.addEventListener("wheel", reverseAll, { passive: false });
+  window.addEventListener("wheel", reversAll, { passive: false });
 
   window.addEventListener("keydown", function (event) {
     if (event.key === "~") {
-      toggleReverseAll();
+      toggleReversAll();
     }
   });
 })();
