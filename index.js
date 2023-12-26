@@ -13,9 +13,10 @@
   function reversAll(event) {
     if (isReverse && event.deltaY != 0) {
       // reverse scroll direction
-      window.scrollBy({
-        top: -event.deltaY * 1.5,
-        left: 0,
+      window.scrollY = window.scrollY - event.deltaY;
+      window.scrollTo({
+        top: window.scrollY,
+        behavior: "smooth",
       });
       event.preventDefault();
     }

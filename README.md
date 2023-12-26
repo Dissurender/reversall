@@ -21,7 +21,6 @@ ReversAll is a simple extension to reverse the scroll behavior of your browser.
 ## Features
 
 - Toggle pop-up to reverse the current site's scroll behavior.
-- 
 
 ## How to Contribute
 
