@@ -24,6 +24,10 @@
 
   window.addEventListener("wheel", reversAll, { passive: false });
 
+  document.addEventListener("click", function (event) {
+    toggleReversAll();
+  });
+
   window.addEventListener("keydown", function (event) {
     if (event.key === "~") {
       toggleReversAll();
