@@ -24,7 +24,7 @@
 
   window.addEventListener("wheel", reversAll, { passive: false });
 
-  document.addEventListener("click", function (event) {
+  document.getElementsByClassName("btn").addEventListener("click", function (event) {
     toggleReversAll();
   });
 
